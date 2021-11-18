@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body>
+
 <!-- HTML -->
 <table id = "myTable" style="border: 10px solid red; font-size: 20px; font-weight: bold">
 <tr id = "row1" style = "color: blue" >
