@@ -68,14 +68,116 @@
             <p><span class="blue">Them</span></p>
         </div>
         <div id= "section_2r">
-            <p>"Group 4 gets it done. Five stars!" - Steve Jobs  "Quality expertise, excellent product standards. 
-                These are professionals working at the higest level." - President Barack Obama 
-                "I could never say anything bad about Group 4. Ever. Group 4 literally saved my life." - Mark Cuban 
-                "I've never seen such a coordinated effort. These people will make you rich!"- Lieutenant Dan 
-                "Ryhmä 4 pyörittää maailmaa. Nämä ihmiset ovat vielä siistimpiä kuin minä!" - Linus Torvalds 
-                "Group 4 is diggity dope." - Dwayne the Rock Johnson "This company is destined to change the world." - Greta Thunberg 
-                "Group 4 brings all the boys to the yard." - Kelis "Once in a generation something amazing happens. This is the generation of Group 4." - George R.R. Martin 
-                "They're alright." - Tony the Tiger 
+            <!--javscript-->
+                <p class="upper_p">Hello World!</p>
+<p class="lower_p">Which language, besides English, do you wnat us to greet you?</p>
+
+<select id="mySelect" onchange="myFunction()">
+ <option value="Pick one">Pick one
+ <option value="Spanish">Spanish
+ <option value="Chinese">Chinese
+ <option value="Tagalog">Tagalog
+ <option value="Vietnamese">Vietnamese
+ <option value="Arabic">Arabic
+ </option value="Ethiopian">Ethiopian
+ <option value="French">French
+ <option value="Korean">Korean
+ <option value="Russian">Russian
+ <option value="German">German
+ <option value="Hindi">Hindi
+ <option value="Portuguese">Portuguese
+ <option value="Italian">Italian
+ <option value="Japanese">Japanese
+ <option value="Greek">Greek
+ <option value="Other">Other
+</select>
+
+<script>
+function myFunction(){
+
+var choice = document.getElementById("mySelect").value;
+
+var message = "<p>You selected " + choice + ".</p>";
+
+switch (choice) {
+
+ case "Pick one":
+ message += "<p>What are you waiting for? Pick one! </p>";
+ break;
+
+ case "Spanish":
+ message += "<p>¡Hola Mundo! 👋 😃 🇲🇽 </p>";
+ break;
+
+ case "Chinese":
+ message += "<p>你好，世界！(Nǐ hǎo, shìjiè!) 👋 😃 🇨🇳</p>";
+ break;
+
+ case "Tagalog":
+ message += "<p> Kamusta Mundo! 👋 😃 🇵🇭 </p>";
+ break;
+
+ case "Vietnamese":
+ message += "<p>Chào thế giới! 👋 😃 🇻🇳 </p>";
+ break;
+
+ case "Arabic":
+ message += "<p>مرحبا بالعالم! (marhaban bialealami!) 👋 😃 🇦🇪 </p>";
+ break;
+
+ case "Ethiopian":
+ message += "<p> እንዴት ኖት or Selam  👋 😃 </p>"; 
+ break;
+
+ case "French":
+ message += "<p>Bonjour le monde! 👋 😃 🇫🇷 </p>";
+ break;
+
+ case "Korean":
+ message += "<p>안녕하세요 월드입니다! (annyeonghaseyo woldeu-ibnida!) 👋 😃 🇰🇷 </p>";
+ break;
+
+ case "Russian":
+ message += "<p>Привет, мир! (Privet, mir!) 👋 😃 🇷🇺</p>";
+ break;
+
+ case "German":
+ message += "<p>Hallo Welt! 👋 😃 🇩🇪 </p>";
+ break;
+
+ case "Hindi":
+ message += "<p>हैलो वर्ल्ड! (hailo varld!) 👋 😃 🇮🇳</p>";
+ break;
+
+ case "Portuguese":
+ message += "<p>Olá Mundo! 👋 😃 🇵🇹</p>";
+ break;
+
+ case "Italian":
+ message += "<p>Ciao mondo! 👋 😃 🇮🇹 </p>";
+ break;
+
+ case "Japanese":
+ message += "<p>こんにちは世界 (Kon'nichiwa sekai) 👋 😃 🇯🇵</p>";
+ break;
+
+ case "Greek":
+ message += "<p>Γειά σου Κόσμε! (Geiá sou Kósme!) 👋 😃 🇬🇷</p>";
+ break;
+
+ default:
+ message += "<p> We sincerely apologize for the inconvenience that we don't have the language you are currently looking for! We are working on it! </p>";
+ break;
+ }
+
+document.getElementById("demo").innerHTML = message;
+
+}
+
+</script>
+
+<p id="demo"></p>
+
             </p>
         </div>
     </div> <!-- end row 2-->
